@@ -1,0 +1,278 @@
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #0B4C5F;
+    text-decoration: none;
+}
+
+li:hover a {
+    background: #04B4AE;
+}
+
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+li:hover ul a:hover {
+    background: #04B4AE;
+    color: #fff;
+}
+
+li ul {
+    display: none;
+}
+
+    display: block;
+    float: none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #0B4C5F;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media screen and (max-width : 760px){
+    
+    ul {
+        position: static;
+        display: none;
+    }
+    li {
+        margin-bottom: 1px;
+    }
+    
+    ul li, li a {
+        width: 100%;
+    }
+    
+    .show-menu {
+        display:block;
+    }
+}
+
+body {
+        background-image: url("imagenes/fondo.png");
+	font: 1em/150% Arial, Helvetica, sans-serif;
+}
+.img1
+ {
+height: auto;
+max-width: 100%;
+display:block;
+margin:auto;
+height: 300px;
+    width: 300px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 70%;
+    border-radius: 80%;
+    background-size: 100% auto;
+}
+.img2
+ {
+height: auto;
+max-width: 100%;
+
+}
+a {
+	color: #669;
+	texto-decoration: none;
+}
+a:hover {
+	texto-decoration: underline;
+}
+h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+
+.navigation{
+  width: 15em;
+  right: -15em; 
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  height: 1000px;
+  background-color: #000;
+}
+.navigation li{
+  display: block;
+}
+@media screen and (min-width: 37.5em){
+.navigation{
+    
+  max-height: inherit; 
+  position: relative;
+  right: inherit; 
+  width: auto; 
+  background-color: #fff;
+}
+  .navigation li{
+    
+    display: inline-block; 
+    }
+  .navigation-toggle{
+    width: 1px;
+    height:1px;
+    overflow: hidden;
+  }
+}
+.nav-js #wrapper {
+    -webkit-transform:translate(-15em, 0) scale(1, 1);
+       -moz-transform:translate(-15em, 0) scale(1, 1);
+        -ms-transform:translate(-15em, 0) scale(1, 1);
+         -o-transform:translate(-15em, 0) scale(1, 1);
+            transform:translate(-15em, 0) scale(1, 1);
+}
+#background-wrapper{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 700px;
+  display: block;
+}
+#wrapper {
+  width: 100%;
+  position: relative;
+    -webkit-transition: all .2s ease-out;
+       -moz-transition: all .2s ease-out;
+        -ms-transition: all .2s ease-out;
+         -o-transition: all .2s ease-out;
+            transition: all .2s ease-out;
+    
+}
+.navigation-toggle {
+  color: #000
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+body{
+  font-family: Helvetica, sans-serif;
+}
+
+#pagewrap {
+	padding: 5px;
+	width: 1235px;
+	margin: 20px auto;
+}
+#header {
+	height: 180px;
+}
+#content {
+	width: 1024px;
+	float: left;
+}
+#sidebar {
+	width: 200px;
+	float: right;
+
+}
+#footer {
+	clear: both;
+}
+
+
+
+@media screen and (max-width: 1235px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 66%;
+	}
+	#sidebar {
+		width: 30%;
+
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+#content {
+	color: #CCC;
+
+}
+#sidebar {
+	color: #CCC;
+}
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+color: #CCC;
+}
+#pagewrap, #header, #content, #sidebar, #footer {
+	border: solid 1px #ccc;
+color: #CCC;
+}
